@@ -46,9 +46,7 @@ def main():
     grayscale_cam = cam(input_tensor=input_tensor, target_category=target_category)
 
     grayscale_cam = grayscale_cam[0, :]
-    visualization = show_cam_on_image(img.astype(dtype=np.float32) / 255.,
-                                      grayscale_cam,
-                                      use_rgb=True)
+    visualization = show_cam_on_image(img.astype(dtype=np.float32) / 255., grayscale_cam, use_rgb=True)
     plt.imshow(visualization)
     plt.show()
 

@@ -87,7 +87,8 @@ if __name__ == '__main__':
                                          transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])])
 
     data_root = os.path.abspath(os.path.join(os.getcwd(), "../.."))  # get data root path
-    image_path = os.path.join(data_root, "data_set", "flower_data")  # flower data set path
+    # image_path = os.path.join(data_root, "data_set", "flower_data")  # flower data set path
+    image_path = r"/home/data/wcy/AD_DATA/DEBUG/Flowers102/data"  # 该地址为数据集的绝对地址
     assert os.path.exists(image_path), "data path {} does not exist.".format(image_path)
 
     validate_dataset = datasets.ImageFolder(root=os.path.join(image_path, "val"),
