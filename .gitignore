@@ -1,7 +1,8 @@
-__pycache__/*
+__pycache__/
 ConfusionMatrix/__pycache__/*
 grad_cam/__pycache__/*
 user/
 user/__pycache__/*
 scripts/
 output/
+.vscode/
